@@ -13,7 +13,7 @@ export const Home = () => {
 
       {/* Contenido centrado */}
       <div className="relative z-10 flex items-center justify-center min-h-screen">
-        <div className="w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 p-8 rounded-xl text-center text-white">
+        <div className="w-12/12 sm:w-10/12 md:w-8/12 lg:w-6/12 p-8 rounded-xl text-center text-white">
           <img
             src="/brand-logo.svg"
             alt="Rick and Morty logo"
