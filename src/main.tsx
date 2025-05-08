@@ -5,6 +5,7 @@ import "./index.css";
 
 import { Layout } from "./layout/Layout";
 import { Home } from "./pages/Home";
+import { Characters } from "./pages/Characters";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -12,7 +13,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/characters" element={<Charactes />} />
+          <Route path="/characters" element={<Characters />} />
         </Route>
       </Routes>
     </BrowserRouter>
