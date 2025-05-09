@@ -1,5 +1,4 @@
-import logo from "/brand-logo.svg";
-
+import React from "react";
 export const Header = () => {
   return (
     <header
@@ -14,7 +13,11 @@ export const Header = () => {
 
       {/* Contenido */}
       <div className="relative z-10 text-center w-full max-w-3xl">
-        <img src={logo} alt="Rick and Morty" className="mx-auto mb-6 w-72" />
+        <img
+          src={"/brand-logo.svg"}
+          alt="Rick and Morty"
+          className="mx-auto mb-6 w-72"
+        />
 
         <div className="flex items-center bg-black bg-opacity-40 border border-white/30 rounded-lg px-4 py-2">
           <svg

@@ -1,3 +1,4 @@
+import React from "react";
 import { lazy, Suspense } from "react";
 
 const MfeList = lazy(() => import("listApp/CharacterList"));

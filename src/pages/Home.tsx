@@ -1,4 +1,4 @@
-import portada from "/portada.jpg";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${portada})` }}
+      style={{ backgroundImage: `url(${"/portada.jpg"})` }}
     >
       {/* Overlay negro con opacidad */}
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
