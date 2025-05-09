@@ -14,6 +14,7 @@ export default defineConfig({
       shared: ["react", "react-dom"],
     }),
   ],
+
   build: {
     target: "esnext",
     minify: false,
@@ -23,6 +24,7 @@ export default defineConfig({
       output: {
         format: "esm",
       },
+      external: ["react", "react-dom"],
     },
   },
 });
