@@ -1,10 +1,14 @@
-import React from "react";
-import { lazy, Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 
 const MfeList = lazy(() => import("listApp/CharacterList"));
 
-export const MfeListWrapper = () => (
+type Props = {
+  searchText: string;
+  resetSearch: () => void;
+};
+
+export const MfeListWrapper = ({ searchText, resetSearch }: Props) => (
   <Suspense fallback={<p>Cargando Microfrontend List...</p>}>
-    <MfeList />
+    <MfeList searchText={searchText} resetSearch={resetSearch} />
   </Suspense>
 );
