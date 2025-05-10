@@ -15,6 +15,19 @@ Para generar build:
 npm run build
 ```
 
+## 🔗 Requisitos previos
+
+Antes de ejecutar esta aplicación, asegurate de que los siguientes microfrontends estén corriendo:
+
+- `mfe-character-list`
+- `mfe-character-detail`
+
+Cada uno debe estar ejecutándose localmente con:
+
+```bash
+npm run dev
+```
+
 ## 🏗️ Arquitectura
 
 - Aplicación base que actúa como `host`.
