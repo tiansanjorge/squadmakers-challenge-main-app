@@ -1,6 +1,7 @@
 # Main App
 
-Aplicación principal que integra los microfrontends `mfe-character-list` y `mfe-character-detail` utilizando Webpack Module Federation.
+Aplicación principal desarrollada como parte del **Squadmakers Challenge**. Este repositorio integra dos microfrontends independientes (`mfe-character-list` y `mfe-character-detail`) utilizando **Webpack Module Federation**, que consumen la API pública de **Rick & Morty** y presentan contenido dinámico en base a un diseño proporcionado por Figma.  
+Ambos microfrontends utilizan además una librería de componentes desarrollada especialmente para este ejercicio: [`tarjeta-lib`](https://github.com/tiansanjorge/squadmakers-challenge-card-component).
 
 ## 🚀 Instalación y ejecución
 
