@@ -38,7 +38,7 @@ npm run build
 ## 🔗 Requisitos previos
 
 Esta aplicación consume dos microfrontends publicados como proyectos independientes.
-Asegurate de clonar y correr ambos para inicializar correctamente la app, consulta sus respectivos README.md. 
+Asegurate de clonar y correr ambos para ejecutar correctamente la app, consulta sus respectivos README.md. 
 
 👉 [`mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
 👉 [`mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail)
