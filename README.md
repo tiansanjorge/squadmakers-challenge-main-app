@@ -2,6 +2,8 @@
 
 Aplicación principal desarrollada como parte del **Squadmakers Challenge**. Este proyecto implementa una arquitectura de microfrontends utilizando **Webpack Module Federation**, integrando dos módulos remotos que se comunican con esta `main-app`, la cual actúa como host y orquestador visual de toda la aplicación.
 
+---
+
 ### 🧩 Microfrontends integrados
 
 ➡️ [🔗 Ver repositorio de `mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
