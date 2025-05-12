@@ -33,19 +33,10 @@ npm run build
 
 ## 🔗 Requisitos previos
 
-Antes de ejecutar esta aplicación, asegurate de que los siguientes microfrontends estén corriendo localmente:
+Esta aplicación consume dos microfrontends publicados como proyectos independientes. Es necesario ejecutarlos localmente para iniciar la aplicación, cada uno cuenta con su propia documentación de instalación y ejecución en su respectivo README.md.
 
-```bash
-cd mfe-character-list
-npm install
-npm run dev
-
-cd mfe-character-detail
-npm install
-npm run dev
-```
-
-> ⚠️ Esta `main-app` depende de esos módulos remotos, por lo que **no funcionará correctamente sin ellos.**
+👉 [`mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
+👉 [`mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail)
 
 ---
 
