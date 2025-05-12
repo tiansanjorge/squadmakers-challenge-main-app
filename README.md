@@ -31,6 +31,8 @@ Para generar una build de producción:
 npm run build
 ```
 
+---
+
 ## 🔗 Requisitos previos
 
 Esta aplicación consume dos microfrontends publicados como proyectos independientes.
