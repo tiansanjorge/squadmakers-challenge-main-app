@@ -7,7 +7,7 @@ Aplicación principal desarrollada como parte del **Squadmakers Challenge**. Est
 ➡️ [🔗 Ver repositorio de `mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
 ➡️ [🔗 Ver repositorio de `mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail)
 
-⚠️ **IMPORTANTE**: estos microfrontends están publicados como proyectos independientes y son parte esencial de esta solución. Asegurate de clonar y correr ambos para evaluar correctamente la app.
+⚠️ **IMPORTANTE**: estos microfrontends están publicados como proyectos independientes. Es necesario ejecutarlos localmente para iniciar la aplicación, cada uno cuenta con su propia documentación de instalación y ejecución en su respectivo README.md.
 
 - [`mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
   → Microfrontend que consume la API pública de **Rick & Morty** y muestra una grilla dinámica de personajes.  
@@ -33,7 +33,8 @@ npm run build
 
 ## 🔗 Requisitos previos
 
-Esta aplicación consume dos microfrontends publicados como proyectos independientes. Es necesario ejecutarlos localmente para iniciar la aplicación, cada uno cuenta con su propia documentación de instalación y ejecución en su respectivo README.md.
+Esta aplicación consume dos microfrontends publicados como proyectos independientes.
+Asegurate de clonar y correr ambos para evaluar correctamente la app. 
 
 👉 [`mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
 👉 [`mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail)
