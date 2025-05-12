@@ -15,7 +15,7 @@ export const Header = ({ onSearch, searchText }: HeaderProps) => {
       style={{
         backgroundImage: `
     radial-gradient(
-  30% 80% at 50% 50%, 
+  30% 50% at 50% 50%, 
   rgba(0, 0, 0, 0.3) 25%, 
   rgba(0, 0, 0, 0.7) 100%
 ),
@@ -56,7 +56,7 @@ export const Header = ({ onSearch, searchText }: HeaderProps) => {
           <input
             type="text"
             placeholder="Buscar personaje por nombre"
-            value={searchText} // <-- controla el valor
+            value={searchText}
             onChange={(e) => onSearch(e.target.value)}
             className="bg-transparent text-white placeholder-white w-full focus:outline-none"
           />
