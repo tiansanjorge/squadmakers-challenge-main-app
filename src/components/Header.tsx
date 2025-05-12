@@ -11,15 +11,24 @@ export const Header = ({ onSearch, searchText }: HeaderProps) => {
 
   return (
     <header
-      className="relative bg-cover bg-center h-64 flex flex-col items-center justify-center px-4"
+      className="relative bg-cover bg-center h-[328px] flex flex-col items-center justify-center px-4"
       style={{
-        backgroundImage: `url('/portada.jpg')`,
-        backgroundPositionY: "40%",
+        backgroundImage: `
+    radial-gradient(
+  30% 80% at 50% 50%, 
+  rgba(0, 0, 0, 0.3) 25%, 
+  rgba(0, 0, 0, 0.7) 100%
+),
+    url('/portada.jpg')
+  `,
+        backgroundPosition: "center 40%",
+        backgroundSize: "cover",
+        backgroundBlendMode: "multiply",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="absolute inset-0"></div>
 
-      <div className="relative z-10 text-center w-full max-w-3xl">
+      <div className="relative z-10 text-center w-full sm:max-w-[75%] ">
         <img
           src={"/brand-logo.svg"}
           alt="Rick and Morty"

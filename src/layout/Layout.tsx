@@ -7,7 +7,7 @@ export const Layout = () => {
   const [searchText, setSearchText] = useState("");
   const resetSearch = () => setSearchText("");
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#E6E7E3]">
       <Header onSearch={setSearchText} searchText={searchText} />
       <main className="flex-grow">
         <Outlet context={{ searchText, resetSearch }} />
