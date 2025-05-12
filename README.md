@@ -1,11 +1,22 @@
 # Main App
 
-Aplicación principal desarrollada como parte del **Squadmakers Challenge**. Este proyecto implementa una arquitectura de microfrontends utilizando **Webpack Module Federation** para integrar dos módulos independientes:
+Aplicación principal desarrollada como parte del **Squadmakers Challenge**. Este proyecto implementa una arquitectura de microfrontends utilizando **Webpack Module Federation**, integrando dos módulos remotos que se comunican con esta `main-app`, la cual actúa como host y orquestador visual de toda la aplicación.
 
-- [`mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list): consume la API pública de **Rick & Morty** y muestra una grilla dinámica de personajes. Además, utiliza la librería de componentes [`tarjeta-lib`](https://github.com/tiansanjorge/squadmakers-challenge-card-component) para renderizar las tarjetas visuales siguiendo el diseño proporcionado en Figma.
-- [`mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail): recibe los datos del personaje seleccionado y presenta su vista de detalle.
+### 🧩 Microfrontends integrados
 
-Ambos microfrontends están coordinados desde esta `main-app`, que actúa como host y orquestador visual de la aplicación.
+➡️ [🔗 Ver repositorio de `mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
+➡️ [🔗 Ver repositorio de `mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail)
+
+⚠️ **IMPORTANTE**: estos microfrontends están publicados como proyectos independientes y son parte esencial de esta solución. Asegurate de clonar y correr ambos para evaluar correctamente la app.
+
+- [`mfe-character-list`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-list)  
+  → Microfrontend que consume la API pública de **Rick & Morty** y muestra una grilla dinámica de personajes.  
+  → Utiliza la librería visual [`tarjeta-lib`](https://github.com/tiansanjorge/squadmakers-challenge-card-component) para renderizar tarjetas con los estilos definidos en Figma.
+
+- [`mfe-character-detail`](https://github.com/tiansanjorge/squadmakers-challenge-mfe-character-detail)  
+  → Microfrontend encargado de mostrar la vista de detalle de un personaje seleccionado.
+
+---
 
 ## 🚀 Instalación y ejecución
 
@@ -14,7 +25,7 @@ npm install
 npm run dev
 ```
 
-Para generar build:
+Para generar una build de producción:
 
 ```bash
 npm run build
@@ -22,32 +33,42 @@ npm run build
 
 ## 🔗 Requisitos previos
 
-Antes de ejecutar esta aplicación, asegurate de que los siguientes microfrontends estén corriendo:
-
-- `mfe-character-list`
-- `mfe-character-detail`
-
-Cada uno debe estar ejecutándose localmente con:
+Antes de ejecutar esta aplicación, asegurate de que los siguientes microfrontends estén corriendo localmente:
 
 ```bash
+cd mfe-character-list
+npm install
+npm run dev
+
+cd mfe-character-detail
+npm install
 npm run dev
 ```
 
+> ⚠️ Esta `main-app` depende de esos módulos remotos, por lo que **no funcionará correctamente sin ellos.**
+
+---
+
 ## 🏗️ Arquitectura
 
-- Aplicación base que actúa como `host`.
-- Integra 2 microfrontends de forma remota.
+- Aplicación host construida con React.
+- Integración de microfrontends vía **Webpack Module Federation**.
 - Navegación mediante `react-router-dom`.
-- Estado global con Redux Toolkit.
+- Estado global manejado con **Redux Toolkit**.
+- Estilos globales y componentes con **TailwindCSS**.
+
+---
 
 ## 📦 Dependencias destacadas
 
 - `react`, `react-dom`, `react-router-dom`
 - `react-redux`, `@reduxjs/toolkit`
-- Webpack 5
-- TailwindCSS
+- `webpack 5`, `webpack-dev-server`
+- `tailwindcss`, `postcss`, `autoprefixer`
 - Testing con `jest`, `ts-jest`, `@testing-library/react`
 - ESLint configurado para TypeScript + React
+
+---
 
 ## ✅ Testing
 
