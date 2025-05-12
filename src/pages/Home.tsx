@@ -19,13 +19,12 @@ export const Home = () => {
             alt="Rick and Morty logo"
             className="mx-auto mb-6"
           />
-          <h2 className="text-2xl font-semibold mb-4">
-            Bienvenido a Rick and Morty
-          </h2>
-          <p className="mb-6">
-            En esta prueba, evaluaremos su capacidad para construir la
-            aplicación mediante el análisis de código y la reproducción del
-            siguiente diseño.
+          <h2 className="text-2xl font-semibold mb-4">Bienvenido</h2>
+          <p className="mb-6 font-medium">
+            App interactiva de Rick & Morty con búsqueda, filtros, favoritos y
+            vista de episodios. Desarrollada con microfrontends e integrada con
+            una librería de componentes propia. Diseño responsive y navegación
+            fluida.
           </p>
           <button
             className="bg-lime-500 hover:bg-lime-600 text-black font-semibold py-2 px-6 rounded-full shadow-md transition"
@@ -33,6 +32,8 @@ export const Home = () => {
           >
             Comenzar
           </button>
+          <p className="mt-20">Desarrollado por</p>
+          <p className="text-xl font-bold">Sebastián Sanjorge</p>
         </div>
       </div>
     </div>
