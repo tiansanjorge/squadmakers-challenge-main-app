@@ -11,7 +11,7 @@ export const Header = ({ onSearch, searchText }: HeaderProps) => {
 
   return (
     <header
-      className="relative bg-cover bg-center h-[328px] flex flex-col items-center justify-center px-4"
+      className="relative bg-cover bg-center h-[256px] sm:h-[328px] flex flex-col items-center justify-center px-4"
       style={{
         backgroundImage: `
     radial-gradient(
